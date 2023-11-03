@@ -27,6 +27,7 @@ jobs:
   upload:
     runs-on: ubuntu-latest
     steps:
+      - uses: actions/checkout@v3
       - name: Build
         run: cargo build --release
       - uses: actions/upload-artifact@v3.1.3
